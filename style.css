@@ -2,4 +2,63 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body {
+	background: linear-gradient(90deg, #aea4e3, #d3ffe8);
+}
+.disabled{
+    text-align: center;
+    display: none;
+}
+/* Первый блок */
+.weather_main-box{
+    width: 50%;
+    margin: 150px auto;
+    font-size: 30pt;
+    color: #fff;
+}
+.weather_container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.info_container{
+    width: 70%;
+    margin: 0px auto;
+    padding: 100px 0;
+    border-radius: 30px ;
+    box-shadow: 0px 0px 50px  #ffffff;
+    background: rgba(35, 206, 244, 0.418);
+}
+.info_container p{
+    text-align: center;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.54);
+}
+@media only screen and (max-width: 960px) {
+    /* styles for browsers larger than 960px; */
+    .weather_main-box{
+        width: 90%;
+        margin: 150px auto;
+        font-size: 30pt;
+        color: #fff;
+    }
+}
+@media only screen and (max-width: 560px) {
+    /* styles for browsers larger than 960px; */
+    .weather_main-box{
+        width: 99%;
+        margin: 100px auto;
+        font-size: 20pt;
+        color: #fff;
+    }
+    .info_container{
+        width: 70%;
+        margin: 0px auto;
+        padding: 50px 0;
+        border-radius: 30px ;
+        box-shadow: 0px 0px 50px  #ffffff;
+        background: rgba(35, 206, 244, 0.418);
+    }
 }
